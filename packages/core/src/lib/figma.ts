@@ -82,7 +82,7 @@ const getClient = (token: string): Figma.ClientInterface => {
         throw new Error('\'Access Token\' is missing. https://www.figma.com/developers/docs#authentication');
     }
 
-    return Figma.Client({ personalAccessToken: token });
+    return Figma.Client({ accessToken: token });
 };
 
 const fileImages = async (client: Figma.ClientInterface, fileId: string, ids: string[]): Promise<{readonly [key: string]: string}> => {
