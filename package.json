@@ -24,7 +24,7 @@
     "coverage": "nyc yarn test --reporter=dot",
     "coverage:watch": "npx nodemon -e js,mjs,ts --exec yarn coverage",
     "website:start": "yarn build && yarn workspace @figma-export/website dev",
-    "website:build": "yarn build && yarn workspace @figma-export/website build",
+    "website:build": "yarn build && yarn workspace @figma-export/website build-only",
     "website:serve": "yarn workspace @figma-export/website start",
     "upgrade:major": "yarn workspaces foreach -iv exec npx npm-check-updates -u",
     "upgrade:minor": "yarn upgrade:major --target minor",
