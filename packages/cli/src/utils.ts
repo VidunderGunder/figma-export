@@ -1,6 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 
+import Module from "node:module"
+
+const require = Module.createRequire(import.meta.url)
+
 const resolveNameOrPath = (nameOrPath: string): string => {
     const absolutePath = path.resolve(nameOrPath);
     return fs.existsSync(absolutePath) ? absolutePath : nameOrPath;

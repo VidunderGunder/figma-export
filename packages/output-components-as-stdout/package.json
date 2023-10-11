@@ -19,6 +19,7 @@
         "components"
     ],
     "license": "MIT",
+    "type": "module",
     "publishConfig": {
         "access": "public"
     },
@@ -26,6 +27,6 @@
         "@figma-export/types": "^4.7.0"
     },
     "engines": {
-        "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+        "node": "^16.13.0 || >=18.0.0"
     }
 }

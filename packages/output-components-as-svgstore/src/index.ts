@@ -6,8 +6,8 @@ import * as FigmaExport from '@figma-export/types';
 
 import { Options as SvgStoreOptions } from './svgstore';
 
-import fs = require('fs');
-import path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 type Options = {
     output: string;
@@ -16,7 +16,7 @@ type Options = {
     getIconId?: (options: FigmaExport.ComponentOutputterParamOption) => string;
 }
 
-export = ({
+export default ({
     output,
     getIconId = (options): string => `${options.pageName}/${options.componentName}`,
     svgstoreConfig = {},

@@ -1,6 +1,6 @@
 import * as FigmaExport from '@figma-export/types';
 
-import { getClient, getPages, enrichPagesWithSvg } from './figma';
+import { getClient, getPages, enrichPagesWithSvg } from './figma.js';
 
 export const components: FigmaExport.ComponentsCommand = async ({
     token,

@@ -21,6 +21,7 @@
         "svgstore"
     ],
     "license": "MIT",
+    "type": "module",
     "publishConfig": {
         "access": "public"
     },
@@ -29,6 +30,6 @@
         "svgstore": "~3.0.1"
     },
     "engines": {
-        "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+        "node": "^16.13.0 || >=18.0.0"
     }
 }

@@ -12,7 +12,7 @@ import {
     fromEntries,
     chunk,
     emptySvg,
-} from './utils';
+} from './utils.js';
 
 const getComponents = (
     children: readonly Figma.Node[] = [],

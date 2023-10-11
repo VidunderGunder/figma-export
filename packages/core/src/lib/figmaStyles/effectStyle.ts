@@ -1,8 +1,8 @@
 import * as Figma from 'figma-js';
 import * as FigmaExport from '@figma-export/types';
 
-import { notEmpty } from '../utils';
-import { extractColor } from './paintStyle';
+import { notEmpty } from '../utils.js';
+import { extractColor } from './paintStyle.js';
 
 const createEffectStyle = (effect: Figma.Effect): FigmaExport.EffectStyle | undefined => {
     // eslint-disable-next-line default-case

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { asArray, requirePackages } from './utils';
+import { asArray, requirePackages } from './utils.js';
 
 describe('Utils', () => {
     describe('requirePackages', () => {

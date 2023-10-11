@@ -4,7 +4,7 @@ import { Sade } from 'sade';
 import * as figmaExport from '@figma-export/core';
 import * as FigmaExport from '@figma-export/types';
 
-import { asArray, requirePackages } from '../utils';
+import { asArray, requirePackages } from '../utils.js';
 
 export const addComponents = (prog: Sade, spinner: Ora) => prog
     .command('components <fileId>')

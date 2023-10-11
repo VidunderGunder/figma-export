@@ -2,10 +2,10 @@ import * as FigmaExport from '@figma-export/types';
 import { kebabCase } from '@figma-export/utils';
 
 import { Extension } from './types';
-import { writeVariable } from './utils';
+import { writeVariable } from './utils.js';
 
-import fs = require('fs');
-import path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 type Options = {
     output: string;
@@ -14,7 +14,7 @@ type Options = {
     getVariableName?: FigmaExport.GetVariableName
 }
 
-export = ({
+export default ({
     output,
     getExtension = () => 'SCSS',
     getFilename = () => '_variables',
