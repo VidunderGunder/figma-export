@@ -538,7 +538,7 @@ __metadata:
     ora: ~6.3.1
     sade: ~1.8.1
   bin:
-    figma-export: ./bin/run.js
+    figma-export: ./bin/run.mjs
   languageName: unknown
   linkType: soft
 

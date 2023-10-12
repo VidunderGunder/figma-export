@@ -2,8 +2,8 @@
     "name": "@figma-export/output-components-as-svg",
     "version": "4.7.0",
     "description": "Outputter for @figma-export that exports components as svg",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "main": "dist/index.mjs",
+    "types": "dist/index.d.mts",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/marcomontalbano/figma-exporter.git",

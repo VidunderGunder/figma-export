@@ -1,6 +1,7 @@
 {
-    "extension": ["js", "ts"],
-    "spec": "packages/**/*.test.ts",
+    "extension": ["js", "ts", "mts"],
+    "spec": "packages/**/*.test.mts",
     "require": "ts-node/register",
+    "loader": "ts-node/esm",
     "file": ["test--registers.ts", "test--packages.ts"]
   }

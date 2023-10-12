@@ -2,8 +2,11 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 
-const { readdirSync, statSync } = require('fs');
-const { resolve } = require('path');
+import { readdirSync, statSync } from 'fs';
+import { createRequire } from 'module'
+import { resolve } from 'path';
+
+const require = createRequire(import.meta.url)
 
 const isDirectory = (source: string): boolean => statSync(source).isDirectory();
 

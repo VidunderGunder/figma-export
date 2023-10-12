@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "NodeNext",
     "allowSyntheticDefaultImports": true,
     "target": "es6",
     "sourceMap": true,
@@ -21,12 +21,12 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Module Resolution Options */
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
-  "exclude": [
-    "**/dist",
-    "**/*.test.ts"
-  ]
+  "exclude": ["**/dist", "**/*.test.mts"],
+  "ts-node": {
+    "esm": true
+  }
 }

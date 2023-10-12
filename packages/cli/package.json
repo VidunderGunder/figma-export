@@ -4,7 +4,7 @@
   "version": "4.7.0",
   "author": "Marco Montalbano",
   "bin": {
-    "figma-export": "./bin/run.js"
+    "figma-export": "./bin/run.mjs"
   },
   "bugs": "https://github.com/marcomontalbano/figma-export/issues",
   "dependencies": {
